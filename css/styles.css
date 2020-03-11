@@ -1,0 +1,214 @@
+html,
+body {
+	height: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+#cover {
+	background-size: cover;
+	color: white;
+	height: 100%;
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+#cover-caption {
+	width: 100%;
+}
+
+
+
+.section-content {
+	padding: 7rem 0;
+}
+
+#about {
+	background: url("../images/Megaformer_BG.jpg") center no-repeat;
+	background-size: cover;
+
+}
+
+#aboutMachine {
+	background: url("../images/theMachine.jpg") center no-repeat;
+	background-size: cover;
+
+}
+
+.about-text {
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 1.875rem;
+}
+
+#footer-main {
+	background: #222;
+	color: white;
+	font-size: 0.8rem;
+	padding: 2.5rem 0;
+}
+
+.navbar-brand > img {
+	max-width: 15%;
+	max-height: 15%;
+	clear: both;
+	display: inline-block;
+
+
+}
+
+
+/*Modal Styling*/
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	display: none;
+
+}
+
+
+
+
+#modal {
+	padding: auto;
+	text-align: center;
+	width: 350px;
+	background: #fff;
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+	border-radius: 10px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	margin-top: -200px;
+	margin-left: -200px;
+	z-index: 1001;
+	display: none;
+}
+
+#modal span {
+	color: #333333;
+}
+
+/*Animations*/
+
+.animatable {
+
+	/* initially hide animatable objects */
+	visibility: hidden;
+
+	/* initially pause animatable objects their animations */
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+}
+
+/* show objects being animated */
+.animate-in {
+	visibility: visible;
+
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+
+	-webkit-animation-play-state: running;
+	animation-play-state: running;
+}
+
+.animate-out {
+	visibility: visible;
+
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+
+	-webkit-animation-play-state: running;
+	animation-play-state: running;
+
+	-webkit-animation-direction: reverse;
+	animation-direction: reverse;
+}
+
+.animate-out:after {
+	content ''
+	letter-spacing: inherit;
+}
+
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+.animate-in.animationDelay,
+.animate-out.animationDelay {
+	animation-delay: .4s;
+	-webkit-animation-delay: .4s;
+}
+
+.animate-in.animationDelayMed,
+.animate-out.animationDelayMed {
+	animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+}
+
+.animate-in.animationDelayLong,
+.animate-out.animationDelayLong {
+	animation-delay: 1.6s;
+	-webkit-animation-delay: 1.6s;
+}
+
+.animate-in.fadeInDown,
+.animate-out.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+
+
+/*Bootstrap specific*/
+
+.card {
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-brand > img {
+	max-width: 40%;
+	max-height: 40%;
