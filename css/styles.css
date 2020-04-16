@@ -55,13 +55,25 @@ img {
 	padding: 2.5rem 0;
 }
 
-.navbar-brand > img {
-	max-width: 40%;
-	max-height: 40%;
-	clear: both;
-	display: inline-block;
+.navbar-collape {
+	display: block;
+}
 
 
+h1,h2,h3,h4,h5{
+	font-family: 'Permanent Marker', cursive, sans-serif;
+}
+
+#mission-statement{
+	text-align: center;
+}
+
+.dropdown-menu{
+	background-color: #333333;
+}
+
+.dropdown-item{
+	color: rgba(255,255,255,.5);
 }
 
 
