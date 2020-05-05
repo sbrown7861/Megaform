@@ -60,20 +60,25 @@ img {
 }
 
 
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
 	font-family: 'Permanent Marker', cursive, sans-serif;
 }
 
-#mission-statement{
+#mission-statement {
 	text-align: center;
+	margin-bottom: -100%;
 }
 
-.dropdown-menu{
+.dropdown-menu {
 	background-color: #333333;
 }
 
-.dropdown-item{
-	color: rgba(255,255,255,.5);
+.dropdown-item {
+	color: rgba(255, 255, 255, .5);
 }
 
 
@@ -224,3 +229,13 @@ h1,h2,h3,h4,h5{
 .navbar-brand > img {
 	max-width: 15%;
 	max-height: 15%;
+}
+
+
+.carousel-caption{
+	top: 20%;
+}
+
+.carousel-caption > h1 {
+	font-size: 6em;
+}
