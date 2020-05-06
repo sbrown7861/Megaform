@@ -22,6 +22,10 @@ img {
 	max-width: 100%;
 }
 
+a{
+	color: #225ba9;
+}
+
 #cover {
 	background-size: cover;
 	color: white;
@@ -144,6 +148,7 @@ text-decoration: none;
 background: #ffffff;
 padding: 20px;
 border: 4px solid #494949;
+border-radius: 1em;	
 display: inline-block;
 -webkit-transition: all 0.4s ease 0s;
 transition: all 0.4s ease 0s;
@@ -153,8 +158,9 @@ width: 80%;
 	
 #modal > a:hover {
 color: #ffffff;
-background: #0145f1;
-border-color: #0145f1;
+background: #225ba9;
+border-color: #225ba9;
+border-radius: 1em;
 -webkit-transition: all 0.4s ease 0s;
 transition: all 0.4s ease 0s;
 }
@@ -268,15 +274,4 @@ transition: all 0.4s ease 0s;
 .navbar-brand > img {
 	max-width: 15%;
 	max-height: 15%;
-}
-
-
-.carousel-caption{
-	top: 10%;
-}
-
-.carousel-caption > h1 {
-    font-size: 350%;
-    text-align: center;
-	font-family: 'edoregular';
 }
