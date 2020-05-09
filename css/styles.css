@@ -275,3 +275,25 @@ transition: all 0.4s ease 0s;
 	max-width: 15%;
 	max-height: 15%;
 }
+
+/*Mindbody form CSS*/
+
+h1{
+	text-align: center;
+	font-size: 5em;
+}
+
+input{
+	width: 80%;
+	margin: 1% 10%;
+}
+
+select{
+	width: 80%;
+	margin: 1% 10%;
+}
+
+
+
+
+
