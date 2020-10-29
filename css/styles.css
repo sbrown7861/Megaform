@@ -28,6 +28,13 @@ a {
 #cover-caption {
 	width: 100%;
 }
+.carousel-inner img {
+	margin: auto;
+  }
+
+  #carousel{
+	  margin: auto;
+  }
 
 .section-content {
 	padding: 7rem 0;
@@ -246,7 +253,6 @@ h5 {
 }
 
 .animate-out:after {
-	content ''
 	letter-spacing: inherit;
 }
 
